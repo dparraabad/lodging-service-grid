@@ -1,0 +1,125 @@
+/* Colors of Categories */
+.lodging {
+  color: var(--lodging);
+}
+
+.concert {
+  color: var(--concert);
+}
+
+.class {
+  color: var(--class);
+}
+
+.ride {
+  color: var(--ride);
+}
+
+/* Principal Content */
+
+.main {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.module {
+  padding-top: 1.7rem;
+}
+
+.module h2 {
+  padding-bottom: 1rem;
+  font-size: 2.4rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-info {
+  padding: 0.6rem 0 1rem 1rem;
+}
+
+.card-info .category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-info .title {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.card-info .price {
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+/* Premium */
+.premium {
+  height: 30rem;
+  background-image: url("../../img/hospedaje-pro.jpg");
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: block;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background-color: var(--light);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--primaryColor);
+  color: var(--light);
+}
+
+.premium .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+.premium .card-info h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--light);
+}
+
+/* Popular Destination */
+
+.popular .card-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.popular .card {
+  position: relative;
+}
+
+.popular .card-info {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.popular .card-info .title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--light);
+}

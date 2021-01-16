@@ -1,0 +1,79 @@
+.header__navigation {
+  width: 100%;
+  max-width: 90vw;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  flex-direction: row;
+  padding-top: unset;
+}
+
+.navigation ul li {
+  padding-left: 2rem;
+}
+
+.header__search {
+  width: 100%;
+  max-width: 85vw;
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: max-content auto;
+  margin: 0 auto;
+}
+
+.header__search h1 {
+  grid-column: 2 / 3;
+  text-align: left;
+  font-size: 4.2rem;
+}
+
+.header__search form {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  position: relative;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding-left: 4.5rem;
+  background-size: 2.4rem;
+  font-size: 2.6rem;
+}
+
+form input[type="submit"] {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  padding: 1.3rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 2rem;
+}
+
+.premium {
+  grid-template-columns: auto 30%;
+}
+
+.premium .card-info {
+  grid-column: 2 / 3;
+}
+
+.button {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.premium .card-info h3 {
+  text-align: right;
+  color: var(--dark);
+}
+
+.footer {
+  padding: 2.5rem 0;
+}
+
+.social-media {
+  justify-content: flex-end;
+}

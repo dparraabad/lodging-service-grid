@@ -1,0 +1,104 @@
+/* Footer */
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: -100%;
+  background-color: var(--light);
+  -webkit-box-shadow: 0px 13px 24px -10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 13px 24px -10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 13px 24px -10px rgba(0, 0, 0, 0.32);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer.active {
+  bottom: 0;
+}
+
+.footer .card-container {
+  width: 90vw;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.footer-navigation {
+  padding: 1rem;
+}
+
+.footer-navigation h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.footer-navigation a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.footer-navigation a:last-of-type {
+  margin-bottom: 0;
+}
+
+.social-media {
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 0 1.3rem;
+  list-style: none;
+}
+
+.social-media li {
+  margin-right: 1rem;
+}
+
+.social-media li:last-of-type {
+  margin-right: unset;
+}
+
+.social-media li a {
+  text-decoration: none;
+}
+
+.social-media li a:before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.8rem;
+  color: var(--dark);
+}
+.social-media li a[href*="facebook.com"]::before {
+  content: "\f39e";
+}
+
+.social-media li a[href*="twitter.com"]::before {
+  content: "\f099";
+}
+
+.social-media li a[href*="instagram.com"]::before {
+  content: "\f16d";
+}
+
+.social-media li span {
+  display: none;
+}
+
+.float-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem 2rem;
+  -webkit-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  background-color: var(--primaryColor);
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--light);
+  transition: all 0.3s ease;
+}
+
+.float-button.active,
+.float-button:hover {
+  background-color: var(--primaryColor);
+  color: var(--light);
+}

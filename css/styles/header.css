@@ -1,0 +1,86 @@
+/* Header */
+.header {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 100vh;
+  background-image: url("../../img/arriba.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.6rem;
+}
+
+.header__navigation img {
+  display: block;
+  margin: auto;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.navigation ul li {
+  padding-top: 1.5rem;
+}
+
+.navigation li a {
+  font-size: 2rem;
+  color: var(--light);
+}
+
+.header__search {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 3rem;
+  color: var(--light);
+}
+
+.header__search h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.header__search form {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+}
+
+form input[type="text"] {
+  margin: 1rem 0;
+  padding: 1rem 3rem;
+  background-image: url("../../img/lupa.png");
+  background-position: 1rem center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+}
+
+form input[type="text"]::placeholder {
+  color: var(--gray);
+}
+
+form input[type="submit"] {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.7rem 2.3rem;
+  background-color: var(--primaryColor);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--light);
+}

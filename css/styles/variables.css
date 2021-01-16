@@ -1,0 +1,14 @@
+:root {
+  --principalFont: "Lato", sans-serif;
+
+  --primaryColor: #da595e;
+
+  --light: white;
+  --gray: rgb(175, 175, 175);
+  --dark: #484848;
+
+  --lodging: #275154;
+  --concert: #da595e;
+  --class: #598dda;
+  --ride: #940ad4;
+}
