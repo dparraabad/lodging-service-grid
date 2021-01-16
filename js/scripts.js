@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (time > 25) {
             time = 0;
-            headerImage.style.backgroundImage = "url(../img/" + images[counter] + ")";
+            headerImage.style.backgroundImage = "url(././img/" + images[counter] + ")";
 
             if (counter === images.length - 1) {
                 counter = 0;
